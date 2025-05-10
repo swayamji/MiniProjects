@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="panel">
+            <div id="ptop">
+                <input type="text" id="output" class="output" disabled>
+        
+            </div>
+            <div id="pbtm">
+                <div id="left">
+                    <button id="on">N</button>
+                    <button  onclick="deleteLast() ">x</button>
+                    <button  onclick="calculate()">=</button>
+                    <button  onclick="appendNumber(1)">1</button>
+                    <button  onclick="appendNumber(2)">2</button>
+                    <button  onclick="appendNumber(3)">3</button>
+                    <button  onclick="appendNumber(4)">4</button>
+                    <button  onclick="appendNumber(5)">5</button>
+                    <button  onclick="appendNumber(6)">6</button>
+                    <button  onclick="appendNumber(7)">7</button>
+                    <button  onclick="appendNumber (8)">8</button>
+                    <button  onclick="appendNumber(9)">9</button>
+                    <button  onclick="appendNumber(0)">0</button>
+                    <button id="brac" onclick="appendOperator('%')">%</button>
+                    <button onclick="appendNumber('.')">.</button>
+                </div>
+                <div id="right">
+                    <button id="AC" onclick="clearOutput()">C</button>
+                    <button id="add" onclick="appendOperator('+')">+</button>
+                    <button id="sub" onclick="appendOperator('-')">-</button>
+                    <button id="divide" onclick="appendOperator('/')">/</button>
+                    <button id="multiply" onclick="appendOperator('*')">*</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

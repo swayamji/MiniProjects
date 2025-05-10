@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+           <div class="heading"> 
+
+            <i class="ri-menu-line"></i>
+            <img src="https://aniwave.to/assets/sites/aniwave/logo3.png" alt="">
+
+            </div>
+            
+            <div class="nav-headings">
+
+                <div class="H1"><i class="ri-search-line"></i> <input type="text" placeholder="Search anime..." name="search"></div>
+               
+                <div class="H2"><a><i class="ri-arrow-left-right-line"></i>Watch2gether<a></div>
+
+                <div class="H3"><i class="ri-arrow-left-right-line"></i><a>Random<a></div>
+
+               <div class="H4"><i class="ri-book-2-fill"></i><a>Read Manga<a></div>
+
+               <div class="toggle-switch">
+                <button class="toggle-btn" id="en-btn" onclick="toggleLanguage('en')">EN</button>
+                <button class="toggle-btn" id="jp-btn" onclick="toggleLanguage('jp')">JP</button>
+               </div>
+            </div>
+            <div class="SignIn">
+                <i id="i2"class="ri-search-line"></i>
+            <button id="SignIn"type="submit">Sign In <i class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+     <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+     </div>
+
+    <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <img src="https://pbs.twimg.com/media/GAP-XOwbwAEZrrC.jpg" >
+    <div class="text">Suicide Squad isekai</div>
+  </div>
+
+  <div class="mySlides">
+    <img src="https://cdn.oneesports.gg/cdn-data/2024/03/Anime_WindBreaker_KeyImage_1.jpg" >
+    <div class="text">WIND BREAKER</div>
+  </div>
+
+  <div class="mySlides">
+    <img src="https://staticg.sportskeeda.com/editor/2024/01/9942a-17057039812237-1920.jpg" >
+    <div class="text">The strongest magician <br>in demon lord's army<br> was a human</div>
+  </div>
+
+  <div class="mySlides">
+    <img src="https://repository-images.githubusercontent.com/471441107/f82ce350-e792-4670-a0d7-f0df842a0575" alt="" >
+    <div class="text">One piece</div>
+  </div>
+
+  <div class="mySlides">
+    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/02/kaiju-no-8-main-cast.jpg" alt="" >
+    <div class="text">Kajju no. 8</div>
+  </div>
+
+  <div class="mySlides">
+    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/03/mushoku-tensei-jobless-reincarnation-season-2-cour-2-key-visual-rudeus-greyrat-sylphiette-featured.jpg" alt="" >
+    <div class="text">Jobless reincarnation</div>
+  </div>
+      
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

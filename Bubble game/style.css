@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Gilda+Display:regular);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilda display;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(125, 222, 125, 0.599)
+}
+#panel{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#ptop{
+    padding: 0px 15% ;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background-color: rgba(85, 146, 85, 0.977);
+    width: 100%;
+    height: 100px;
+}
+#startbtn{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border: rgba(85, 146, 85, 0.977);
+    cursor: pointer;
+}
+#startbtn:hover{
+    background-color: rgba(62, 117, 62, 0.232);
+    border: 1px solid black;
+}
+#endbtn{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border: rgba(85, 146, 85, 0.977);
+    cursor: pointer;
+}
+#endbtn:hover{
+    background-color: rgba(62, 117, 62, 0.232);
+    border: 1px solid black;
+}
+.elem{
+   color: #fff;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+  }
+.elem h3{
+    font-size: 20px;
+    font-weight: 550;
+  }
+.box{
+    color: #0d7c11;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#pbtm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bubble{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: rgba(85, 146, 85, 0.977);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+}
+.bubble:hover{
+    background-color: rgba(52, 91, 52, 0.977);
+    cursor: pointer;
+}

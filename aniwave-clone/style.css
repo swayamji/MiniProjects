@@ -1,0 +1,319 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'nunito';
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #141414;
+}
+.header{
+    height: 4.5rem;
+    width: 100%;
+}
+.main{
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+/**NAV*/
+.nav{
+    height: 4.5rem;
+    width: 100%;
+    background-color: rgb(28,28,28);
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+
+}
+/**IMAGE*/
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right:0.37vw;
+    color:#DDDDDD;
+    font-size: 1.5vw;
+    gap:1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+#i2{
+    display: none;
+}
+.heading>img{
+    height: 2.2vmax;
+}
+/**Heading-1*/
+.nav-headings{
+    width: 70%;
+    display: flex;
+    color: #AAAAAA;
+    align-items: center;
+    justify-content:flex-start;
+}
+.H1{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    right: 2vw;
+}
+.H1>input{
+    width: 30vw;
+    font-size: 0.8vw;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #141414;
+
+}
+.H1>i{
+    color: #AAAAAA;
+    font-size: 1.01vw;
+    font-weight: 900;
+    gap: none;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #141414;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
+.H1>i:hover{
+    color:#ebe9e9 ;
+}
+/**Heading-2*/
+.H2{
+    position: relative;
+    right: 0.4vw;
+    font-size: 0.8vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+.H2:hover{
+    color: #8365b3;
+}
+
+/**Heading-3*/
+.H3{
+    position: relative;
+    right: -1vw;
+
+    font-size: 0.8vw;
+    font-weight: 700;;
+    cursor: pointer;
+}
+.H3:hover{
+    color: #8365b3;
+}
+
+/**Heading-4*/
+.H4{
+    display: flex;
+    position: relative;
+    right: -2.5vw;
+    font-size: 0.8vw;
+    font-weight: 700;
+    cursor: pointer; 
+}
+.H4:hover{
+    color: #8365b3;
+}
+
+/**Toggle*/
+.toggle-switch{
+    display: flex;
+    gap: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -4.5vw;
+}
+#en-btn{
+    padding: 1px 8px;
+    background-color: #AAAAAA;
+    color: #1c1c1c;
+    border: none;
+    border-top-left-radius:3px ;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+}
+#jp-btn{
+    padding: 1px 8px;
+    background: rgb(43, 42, 42);
+    border:none;
+    border-bottom-right-radius:3px ;
+    border-top-right-radius:3px ;
+    color: #AAAAAA;
+    cursor: pointer;
+}
+/**SignIn*/
+#SignIn{
+    padding: 6px 20px;
+    background-color: #754bc2c7;
+    font-size: 0.9vw;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#SignIn:hover{
+    background-color: #744bc2;
+    transition: 0.3s;
+}
+
+/**CONTENT*/
+.slideshow-container{
+    padding-left: 38px;
+    padding-right: 40px;
+    display: flex;
+    border-bottom: 2px solid black;
+
+}
+.mySlides{
+    width: 30vw;
+}
+.mySlides>img{
+    position: relative;
+    left: 38vw;
+    width: 60vmax;
+    height: 49vmin;
+    border-radius: 20px;
+    object-fit:cover;
+    object-position: center;
+    
+}
+.text{
+    font-size: 2.5vmax;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    padding: 8px 12px;
+    
+}
+.dots{
+    width: 10vw;
+    position: relative;
+    top:25vw;
+}
+.dot{
+   display: inline-flex;
+   position:initial;
+   bottom: 10px;
+   cursor: pointer;
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background-color: #AAAAAA;
+   transition: background-color 0.6s ease;
+   margin: 0px 4px;
+}
+.dot:hover{
+    background-color: #744bc2;
+}
+.active :hover{
+    background-color: #744bc2;
+}
+.fade{
+    animation: fade 1s;
+}
+@keyframes fade{
+    from {opacity: 0.4;}
+    to{opacity: 1;}
+}
+
+
+/*1000px*/
+
+@media (max-width:1000px) {
+    .nav{
+        height: 60px;
+        padding: 25px;
+    }
+    .nav-headings{
+       position: relative;
+       left: 7vw;
+    }
+    .heading>i{
+        font-size: 3vmax;
+    }
+    .heading>img{
+        height: 4vmax;
+    }
+    .H1{
+        display: none;
+    }
+    .nav-headings{
+        justify-content: center;
+    }
+    .H2,.H3,.H4{
+        font-size: 1.5vw;
+        font-weight: 600;
+    }
+    #i2{
+        display: flex;
+        font-size: 2vw;
+        position: relative;
+        color: #AAAAAA;
+    }
+     .SignIn{
+        width: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    #SignIn>i{
+        display: none;
+    }
+    #SignIn{
+        padding: 7px 8px;
+        border-radius: 3px;
+        font-size: 1.58vw;
+    }
+}
+
+/*800px**/
+@media (max-width:780px) {
+    .nav{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #i2{
+        color: #AAAAAA;
+        display: flex;
+        font-size: 2vmax;
+        font-weight: 900;
+    }
+    .heading>i{
+        font-size: 3vmax;
+    }
+    .heading>img{
+        height: 4vmax;
+    }
+    .nav-headings{
+        display: none;
+    }
+    .SignIn{
+        display: flex;
+        align-items: center;
+        gap:20px;
+    }
+    #SignIn{
+        font-size: 1.4vmax;
+        padding: 6px 6px;
+        border-radius: 3px;
+    }
+}
